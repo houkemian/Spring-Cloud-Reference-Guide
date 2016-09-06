@@ -1,0 +1,46 @@
+# Spring Cloud
+
+Spring Cloud是面向开发者提供快速构建分布式应用的常用模块(例配置管理,服务发现,断路器,智能路由,微型代理,控制总线,一次性令牌,全局锁,领导选举,分布式会话,团簇态([cluster state](https://en.wikipedia.org/wiki/Cluster_state)))。协调分布式系统中的*领导公式化模式?*,开发者可以使用Spring Cloud快速建立服务和应用来实现这些模式。他们可以在任何分布式系统中运行良好,包括开发者自己的电脑、数据中心以及托管到像*Cloud Foundry*这样的第三方平台上。  
+
+版本: Brixton.SR5  
+
+****
+
+
+**特性**  
+Spring Cloud专注于向*典型用例*与*可扩展性机制*提供良好的开箱即用的体验
+1. 分布式/版本 配置
+2. 服务注册与发现
+3. 路由
+4. 服务-服务调用
+5. 负载均衡
+6. 断路器
+7. 全局锁
+8. 领导选举与团簇态([cluster state](https://en.wikipedia.org/wiki/Cluster_state))
+9. 分布式消息  
+  
+****  
+
+
+**原生云应用**  
+
+[Cloud Native](pivotal.io/platform-as-a-service/migrating-to-cloud-native-application-architectures-ebook)是一种鼓励简单采用在持续交付和价值驱动开发领域的应用开发风格的最佳实践,一个相关学科[12-factor Apps](https://12factor.net/)的开发实践与交付和运营目标一致,例如使用声明式编程、管理与监控。Spring Cloud通过一些特定的方式与出发点来促进这种开发风格,无论是需要或需要简单访问时,在分布式系统中包含所有特性的组件。  
+
+
+其中的大部分特性都涉及到[Spring Boot](http://projects.spring.io/spring-boot/),我们以此为基础建立 Spring Cloud 应用。更多的是由Spring Cloud的两个包提供:Spring Cloud Context与Spring Cloud Commons。Spring Cloud Context向Spring Cloud Application中的ApplicationContext提供使用工具和一些特殊的服务(上下文引导,解密,*刷新范围*,环境端点)。Spring Cloud Commons是一套适用于不同Spring Cloud实现的抽象化、常用类(例如Spring Cloud Netflix与Spring Cloud Consul)。  
+
+If you are getting an exception due to "Illegal key size" and you are using Sun’s JDK, you need to install the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files. See the following links for more information:  
+如果你发生"Illegal key size"异常，并且你在使用Sun的JDK,你需要安装Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files,下面可以获取更多信息:  
+- [Java 6 JCE](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
+- [Java 7 JCE](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
+- [Java 8 JCE](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)  
+
+
+
+Extract files into JDK/jre/lib/security folder (whichever version of JRE/JDK x64/x86 you are using).
+Note
+	Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at github.   
+提取文件到JDK/jre/lib/security文件夹  
+
+> NOTE:
+Spring Cloud在非限制性Apache 2.0许可下发布,如果你想对此文档贡献内容，亦或你发现错误,请在[github](https://github.com/spring-cloud/spring-cloud-commons/tree/master/docs/src/main/asciidoc)找到源码并跟踪问题。  
