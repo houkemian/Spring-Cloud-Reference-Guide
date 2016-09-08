@@ -1,1 +1,1 @@
-### Spring Cloud Config
+Spring Cloud Config提供服务和客户端来支持在分布式系统中外部配置。通过Config Server你有一个用来管理所有环境中应用的外部配置的中心。对Spring的`Environment`和`PropertySource`抽象,服务端与客户端都有相同的概念，这样它们可以和Spring应用适配的非常好,但是可以应用在任何语言运行的任何应用。随着应用从开发到测试到产品上线的的部署,你可以通过管理配置来确保在应用在环境中迁移运行时有他们需要的东西。服务器后端存储默认实现是[git](https://git-scm.com/),可以更简单的支持配置环境的版本管理,同样也有大范围的工具可以用来接入管理内容。使用Spring configuration来替换另外的实现和插件是很简单的。
